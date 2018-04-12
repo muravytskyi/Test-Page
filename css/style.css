@@ -1,0 +1,310 @@
+
+
+.header_logo {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.header_logo::after {
+    content: '';
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 40%;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    left: 0;
+    bottom: 0;
+}
+
+.header_logo::before {
+    content: '';
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 40%;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    right: 0;
+    bottom: 0;
+    /* content: '';
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 10px;
+    background: white;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    z-index: 1; */
+}
+
+.header-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__title {
+    font-size: .7rem;
+    text-align: right;
+}
+
+.header__title pre {
+    overflow: hidden;
+    margin-bottom: 0;
+    color: #44328e;
+}
+
+.header-title-large {
+    font-weight: bold;
+    color: #44328e;
+}
+
+
+.navbar-custom::before {
+    content: '';
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); 
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+
+}
+.navbar-custom {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+   
+}
+
+.navbar-nav-custom {
+    list-style: none;
+    padding: 0;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-nav-custom li {
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.navbar-nav-custom a {
+    color: black;
+}
+
+.navbar-nav-custom li::after {
+    content: '';
+    clear: both;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 3px;
+    background: black;
+    border-radius: 50%;
+}
+
+.navbar-nav-custom li:last-child::after {
+    display: none;
+}
+
+header {
+    background-image: url(../img/bg_header.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - -35px);
+}
+
+header .header_wrap {
+    height: 270px;
+    padding-top: 40px;
+}
+
+.child-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.child-image {
+    
+    position: relative;
+    /* width: 300px; */
+    margin-right: 30px;
+}
+
+.progress {
+    overflow: visible;
+}
+
+.child-image > div {
+    position: absolute;
+    width: 100%;
+    padding: 4px 0;
+    background: black;
+    color: white;
+    font-size: .7rem;
+    bottom: 0;
+}
+
+.child-description {}
+
+.child-descr-disease {
+    padding-bottom: 10px;
+}
+
+.child-description .progress-bar.w-75,
+.child-current .progress-bar.w-75 {
+    position: relative;
+    height: .3rem;
+}
+.child-description .progress-bar.w-75::before,
+.child-current .progress-bar.w-75::before {
+    content: "\f004";
+    clear: both;
+    position: absolute;
+    color: red;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    right: -5px;
+    top: -5px;
+}
+
+.child-description .progress-bar.w-75::after,
+.child-current .progress-bar.w-75::after {
+    content: '75%';
+    clear: both;
+    position: absolute;
+    color: red;
+    right: -5px;
+    top: 15px;
+}
+
+.child-current {
+    display: flex;
+}
+
+.description-title {
+    padding-left: 20px;
+}
+
+.description-title-large {
+    font-weight: bold;
+}
+
+.description-title-price {
+    color: #0095d8;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.description-title input {
+    margin-top: 15px;
+}
+
+.advertising {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 55px;
+}
+
+.news {
+    padding-bottom: 50px;
+    border-top: 2px solid rgba(0,0,0,.3);
+}
+
+.news-date {
+    padding-left: 5px;
+    border-radius: 2px;
+    background-color: #e3e3e3;
+}
+
+.news-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+footer {
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+}
+
+.line-top-footer {
+    height: 4px;
+    background-color: white;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    align-self: center;
+}
+
+.footer-logo {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-logo-text {
+    padding-top: 15px;
+    margin-bottom: 0px;
+}
+
+.footer-logo-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-requisite {
+    align-self: center;
+    text-align: right;
+}
+
+.btn-custom {
+    background: radial-gradient(ellipse at center, rgba(255,11,31,1) 0%,rgba(128,14,7,1) 100%);
+    box-shadow: 0px -2px 0 rgba(0,0,0,.3) inset;
+    color: white;
+    font-size: .9rem;
+}
+
+.btn-custom:active {
+    background: radial-gradient(ellipse at center, rgba(255,11,31,1) 0%,rgba(128,14,7,1) 100%);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.3) inset;
+    color: white;
+    font-size: .9rem;
+}
+
+.childs-wrapper {
+    border-bottom: 2px solid rgba(0,0,0,.3)
+}
+
+.show-more {
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: 12px;
+    background: white;
+}
+
+.show-news {
+    position: relative;
+    top: -12px;
+    background: white;
+    padding: 0 30px;
+}
